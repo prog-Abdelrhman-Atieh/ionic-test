@@ -1,0 +1,14 @@
+<div class="main-box">
+  <div class="content">
+    <div class="holder" #holder>
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <div class="show-hide-button">
+    <ion-button (click)="expand()" expand="block" [fill]="fill" [size]="size" [color]="color">
+      <span #arrow>
+        <ion-icon name="arrow-up"></ion-icon>
+      </span>
+    </ion-button>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<ion-header style="position: absolute;" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div style="
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;">
+    <div style="flex-grow: 9;align-self: flex-start;height: 100%;width: 100%;">
+      <ion-slides mode="ios" pager="ios">
+        <ion-slide *ngFor="let slide of slides">
+          <div>
+            <img [src]="slide.image" class="slide-image"/>
+            <h5 class="slide-title" [innerHTML]="slide.title"></h5>
+            <p [innerHTML]="slide.description"></p>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div>
+            <img src="assets/images/logo-full.png" class="slide-image last"/>
+            <h5 class="slide-title">{{"welcome_page.lbl_readToFix" | translate}}</h5>
+            <ion-button (click)="goForword()">
+              <strong>{{"welcome_page.start" | translate}}</strong>
+            </ion-button>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <div style="flex-grow: 1;">
+      <ion-footer>
+        <ion-toolbar>
+          <ion-button  expand="block" (click)="goToLastSlide()"><strong>{{ "welcome_page.btn_getStarted" | translate }}</strong></ion-button>
+        </ion-toolbar>
+      </ion-footer>
+    </div>
+  </div>
+</ion-content>

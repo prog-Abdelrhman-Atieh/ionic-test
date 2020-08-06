@@ -1,0 +1,106 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content [ngClass]="{'normalDevice':!checkDevice(),'largeScreen':checkDevice()}" fullscreen="false">
+  <ion-img src="assets/images/logo-full.png"></ion-img>
+  <ion-slides>
+    <ion-slide>
+      <div class="slide-body">
+        <!-- <ion-text color="primary">
+          <h3>{{"login_page.login" | translate}}</h3>
+        </ion-text> -->
+        <form #form="ngForm" (ngSubmit)="login(form)">
+          <ion-list>
+            <ion-item>
+              <ion-label position="floating">{{"login_page.username" | translate}}</ion-label>
+              <ion-input type="text" ngModel name="username"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">{{"login_page.password" | translate}}</ion-label>
+              <ion-input type="text" ngModel name="password"></ion-input>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label>{{"login_page.switch_toCompany_account" | translate}}</ion-label>
+              <ion-toggle color="primary" [(ngModel)]="switch_toCompany_account" name="isCompany"></ion-toggle>
+            </ion-item>
+            <!-- <div parentDiv>
+              <div #companyField>
+                hhhhhhbr
+                <br>
+                asdihaisodjoiahso
+                <br>
+                jhasnfuinsuiefh
+                <br>jdopfjoajfojasopf
+                <br>apsdjiasdiojasoid
+                <br>hiashdouihaioshdo
+              </div>
+            </div> -->
+            <ion-button type="submit" expand="block" style="margin-top: 30px;">
+              {{"login_page.login" | translate}}
+            </ion-button>
+
+            <ion-item lines='none'>
+              <ion-label (click)="returnedUsers()" color="primary">{{"login_page.returned_users" | translate}}</ion-label>
+            </ion-item>
+          </ion-list>
+        </form>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide-body">
+        <form #form="ngForm" (ngSubmit)="login(form)">
+          <ion-list>
+            <ion-item mobileNumber>
+              <ion-label position="floating">{{"login_page.mobile_number" | translate}}</ion-label>
+              <ion-input type="text" ngModel name="username"></ion-input>
+            </ion-item>
+            <ion-button type="submit" expand="block" style="margin-top: 30px;">
+              {{"login_page.send" | translate}}
+            </ion-button>
+
+            <ion-item lines='none'>
+              <ion-label (click)="backReturnedUsers()" color="primary">{{"login_page.back" | translate}}</ion-label>
+            </ion-item>
+          </ion-list>
+        </form>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="other-buttons">
+   <div class="other-header">
+     <ion-text>
+       <fieldset>
+        <legend>{{"login_page.other_buttons_header" | translate}}</legend>
+      </fieldset>
+     </ion-text>
+   </div>
+   <div class="other-body">
+    <!-- <ion-button (click)="loginWithFacebook()" shape="round" fill="clear">
+      <div>
+        <ion-icon slot="icon-only" name="logo-facebook"></ion-icon><br>
+        <ion-label>Facebook</ion-label>
+      </div>
+    </ion-button>
+    <ion-button (click)="loginWithGmail()" shape="round" fill="clear" color="danger">
+      <div>
+        <ion-icon name="logo-google"></ion-icon><br>
+        <ion-label>Gmail</ion-label>
+      </div>
+    </ion-button> -->
+    <ion-button (click)="crateNewAccount()" fill="clear" color="primary">
+      <div>
+        <ion-label>{{"login_page.create_new_account" | translate}}</ion-label>
+      </div>
+    </ion-button>
+   </div>
+  </div>
+
+  <div class="background-style">
+    <div class="background"></div>
+  </div>
+</ion-content>

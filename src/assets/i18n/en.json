@@ -1,0 +1,40 @@
+{
+  "login_page": {
+    "login": "Login",
+    "username":"Username",
+    "password":"Password",
+    "mobile_number":"Mobile Number",
+    "other_buttons_header":"Or",
+    "switch_toCompany_account":"Login as Company",
+    "create_new_account":"Create New Account",
+    "returned_users":"Are You Old User ?",
+    "back":"Back",
+    "send":"Send"
+  },
+
+  "signup_page":{},
+
+  "welcome_page":{
+    "slide_1_title": "Relax, Profix does care about you",
+    "slide_1_desc": "Profix is always seeking to provide it's professional services by paying attention to every small detail",
+    "slide_2_title": "Profix cames with High Quality Services",
+    "slide_2_desc":"We work in happy and comfortable working environment; our staff is trained, qualified and respected",
+    "slide_3_title": "Fix is always here",
+    "slide_3_desc": "We use latest technologies to provide the best service quality",
+    "btn_getStarted": "Get Started",
+    "btn_requestaService": "Request A Service",
+    "btn_signUp": "SIGN UP",
+    "btn_login": "LOGIN",
+    "btn_signUp_FC":"Sign Up As Financial Customer",
+    "lbl_readToFix": "Ready to Fix?",
+    "start":"Start"
+  },
+
+  "services_categories":{
+    "open_requests":"Open Requests",
+    "scheduled_requests":"Scheduled Requests",
+    "closed_requests":"Closed Requests"
+  },
+  
+  "language":"عربي"
+}

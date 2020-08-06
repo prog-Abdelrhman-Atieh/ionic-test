@@ -1,0 +1,40 @@
+{
+  "login_page": {
+    "login": "تسجيل الدخول",
+    "username":"اسم المستخدم",
+    "password":"كلمة المرور",
+    "mobile_number":"رقم الهاتف",
+    "other_buttons_header":"او",
+    "switch_toCompany_account":"تفعيل حساب الشركة",
+    "create_new_account":"إنشاء حساب جديد",
+    "returned_users":"هل انت مستخدم قديم ؟",
+    "back":"عودة",
+    "send":"ارسال"
+  },
+
+  "signup_page":{},
+
+  "welcome_page":{
+    "slide_1_title": "بروفكس يهتم بك",
+    "slide_1_desc": "تسعى  بروفكس إلى تقديم خدماتها بصورة احترافية من خلال قيم وأخلاق أصيلة، فالإحسان في التفاصيل، والتفصيل في كل مهمة هو أساس عملنا لإبهاج العميل",
+    "slide_2_title": "كادر إداري وفني",
+    "slide_2_desc":"نعمل في بيئة عمل مريحة وسعيدة; فكادرنا مدرب، مؤهل ومقدر",
+    "slide_3_title": "الخدمة المثلى",
+    "slide_3_desc":"جاءت بروفكس براحة البال ابتداء من طلب الخدمة انتهاء بإغلاق الحالة واستلام التغذية الراجعة",
+    "btn_getStarted":" إبدأ",
+    "btn_requestaService": "أطلب خدمة",
+    "btn_signUp": "مستخدم جديد",
+    "btn_login": "تسجيل الدخول",
+    "btn_signUp_FC":"مستخدم جديد كعميل تجاري",
+    "lbl_readToFix": "جاهز للتصليح؟",
+    "start":"ابدأ"
+  },
+
+  "services_categories":{
+    "open_requests":"الطلبات المفتوحة",
+    "scheduled_requests":"الطلبات المجدولة",
+    "closed_requests":"الطلبات المغلقة"
+  },
+  
+  "language":"English"
+}

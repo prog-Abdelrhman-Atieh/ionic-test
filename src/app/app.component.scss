@@ -1,0 +1,16 @@
+.menu-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 41.86vw;
+  min-height: 41.86vw;
+  background-image: url("https://wallpaperplay.com/walls/full/7/5/0/16925.jpg");
+  background-size: cover;
+  color: #fff;
+  .header {
+    margin: 40px 0 0 25px;
+  }
+}
+.selected {
+  color: #09f !important;
+}

@@ -1,5 +1,7 @@
 {
   "name": "EProfixTest",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
